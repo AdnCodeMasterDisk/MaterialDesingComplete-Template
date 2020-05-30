@@ -1,6 +1,14 @@
 # MaterialDesingComplete-Template
 This is a template for use material desing complet system by google and webpack
 
+# basic use
+
+- npm i
+
+- npm run start
+
+# complet instalation
+
 - npm i material-components-web
 
 - npm init
