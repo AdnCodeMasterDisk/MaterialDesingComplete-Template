@@ -1,0 +1,93 @@
+@use "@material/theme"with (
+    $primary: #d81b60,
+    $secondary: #a00037,
+    $on-primary:#FFFFFF,
+    $on-secondary: #ffffff,
+);
+
+@use '@material/button';
+@use "@material/button/mdc-button";
+@use "@material/card/mdc-card";
+@use "@material/drawer/mdc-drawer";
+@use "@material/elevation/mdc-elevation";
+@use "@material/fab/mdc-fab";
+@use "@material/icon-button/mdc-icon-button";
+@use "@material/list/mdc-list";
+@use "@material/ripple/mdc-ripple";
+@use "@material/select/mdc-select";
+@use "@material/textfield/mdc-text-field";
+@use "@material/theme/mdc-theme";
+@use "@material/top-app-bar/mdc-top-app-bar";
+@use "@material/typography/mdc-typography";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+a{
+    color:  #d81b60;
+    text-decoration: none;
+}
+
+h1 {
+    color: black;
+    opacity: 0.7;
+    font-size: 18px;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    background-color: rgba($color: #000000, $alpha: 0.05);
+}
+
+.mdc-drawer-app-content {
+    flex: auto;
+    overflow: auto;
+    position: relative;
+}
+
+.main-content {
+    overflow: auto;
+    height: 100%;
+}
+
+.contendpri{
+    width: 85%;
+    margin: 0px auto;
+    margin-top: 30px;
+}
+
+.card{
+    width: 100%;
+    height: 140px;
+}
+
+.titulocarta{
+    margin-left: 18px;
+    margin-top: 20px;
+}
+
+.parrafo{
+    margin-left: 18px;
+    margin-top: 5px;
+    opacity: 0.7;
+}
+
+.app-fab--absolute {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+  }
+
+  @media(max-width: 700px) {
+     .app-fab--absolute {
+      bottom: 1.5rem;
+      right: 1.5rem;
+    }
+
+    .card{
+        width: 100%;
+        height: 200px;
+    }
+  }
